@@ -131,8 +131,8 @@ x-peer .icon-wrapper {
     width: var(--icon-size);
     padding: 12px;
     border-radius: 50%;
-    background: #388E3C;
-    background-image: linear-gradient(45deg, #388E3C 40%, color-mix(in srgb, #388E3C 70%, white) 100%);
+    background: var(--accent-color);
+    background-image: linear-gradient(45deg, var(--accent-color) 40%, color-mix(in srgb, var(--accent-color) 70%, white) 100%);
     color: white;
     display: flex;
 }
@@ -164,7 +164,7 @@ x-peer:not(.type-ip):not(.type-secret).type-public-id .icon-wrapper {
 }
 
 .highlight-room-ip {
-    --highlight-color: #4CAF50;
+    --highlight-color: var(--primary-color);
 }
 
 .highlight-room-secret {
@@ -304,7 +304,7 @@ x-peer[drop] x-icon {
 }
 
 input:checked + .slider {
-    background-color: #4CAF50;
+    background-color: var(--primary-color);
 }
 
 input:checked + .slider:before {
@@ -346,7 +346,7 @@ x-dialog x-paper {
 }
 
 x-paper > .row:first-of-type {
-    background-color: #388E3C;
+    background-color: var(--accent-color);
     margin-bottom: 5px;
 }
 
@@ -568,7 +568,7 @@ x-paper > .btn-row {
     position: absolute;
     right: 20px;
     content: "✓";
-    color: #4CAF50;
+    color: var(--primary-color);
     font-size: 20px;
 }
 
@@ -649,8 +649,8 @@ x-dialog .dialog-subheader {
     max-width: calc(100vw - 20px);
     overflow: hidden;
     color: white;
-    background-color: #4CAF50;
-    background-image: linear-gradient(225deg, #388E3C 0%, color-mix(in srgb, #388E3C 60%, black) 100%);
+    background-color: var(--primary-color);
+    background-image: linear-gradient(225deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color) 60%, black) 100%);
 }
 
 .shr-panel > div {
@@ -729,7 +729,7 @@ x-dialog .dialog-subheader {
 #base64-paste-dialog .textarea::before {
     font-size: 14px;
     letter-spacing: 0.12em;
-    color: #4CAF50;
+    color: var(--primary-color);
     font-weight: 700;
     text-transform: uppercase;
     white-space: pre-wrap;
@@ -750,7 +750,7 @@ x-dialog .dialog-subheader {
 .circle {
     width: 72px;
     height: 72px;
-    border: 4px solid #4CAF50;
+    border: 4px solid var(--primary-color);
     border-radius: 40px;
     position: absolute;
     clip: rect(0px, 40px, 80px, 0px);
@@ -795,7 +795,7 @@ x-dialog x-paper {
 }
 
 x-dialog a {
-    color: #4CAF50;
+    color: var(--primary-color);
 }
 
 /* Image/Video/Audio Preview */
